@@ -1,0 +1,109 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Adverts in list */
+.advert-in-list {
+  list-style: none;
+  font-size: 1.2em;
+}
+.advert-in-list li {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-bottom: 3px solid #ddd;
+  background-color:#f1f1f1;
+}
+.advert-in-list .make-model {
+  font-size: 1.6em;
+  font-weight:bold;
+  margin: 5px 0px;
+}
+.advert-in-list label {
+  color:#888;
+  font-weight: normal;
+}
+.advert-in-list .price {
+  color: #f33;
+  font-weight:bold;
+}
+
+/* Adverts detailed */
+.advert-detailed {
+  font-size: 1.3em;
+}
+.advert-detailed label {
+  color:#888;
+}
+.advert-detailed .make-model {
+  font-size: 1.5em;
+  font-weight:bold;
+  margin: 15px 0px;
+}
+.advert-detailed .comments {
+  margin: 15px 0px;
+  padding:15px;
+  color: #333;
+  background-color:#eee;
+}
+.advert-detailed .price {
+  color: #f33;
+}
+
+/* Enquiry form */
+.enquiry-form {
+  padding:20px;
+  font-size: 1.3em;
+}
+.enquiry-form label {
+  min-width: 100px;
+}
+.enquiry-form label, .enquiry-form input {
+  margin:10px;
+}
+.enquiry-form .btn {
+  font-size: 1em;
+}
+.enquiry-form .title {
+  font-style: oblique;
+  font-size : 1.4em;
+}
+
+/* Comment form */
+.comment-form {
+  padding:20px;
+  font-size: 1.3em;
+}
+.comment-form label {
+  min-width: 100px;
+}
+.comment-form label, .comment-form input {
+  margin:10px;
+}
+.comment-form .btn {
+  font-size: 1em;
+}
+.comment-form .title {
+  font-style: oblique;
+  font-size : 1.4em;
+}

@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = string.Format("{0} {1}", Model.Make, Model.Model);
+}
+
+
+<div class="container">
+    <!-- Car Details -->
+    <div class="row advert-detailed">
+        <div class="col-xs-12">
+            <div class="row ">
+                <h2>@Model.Make @Model.Model</h2>
+                <div class="col-xs-12 col-sm-6 col-md-4 year"><label>Year:</label> @Model.Year</div>
+
+                @if (Model.IsPrivateSeller)
+                {
+                    <div class="col-xs-12 col-sm-6 col-md-4 contact-name"><label>Contact Name:</label> @Model.ContactName</div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 phone"><label>Phone:</label> @Model.Phone </div>
+                }
+                else
+                {
+                    <div class="col-xs-12 col-sm-6 col-md-4 abn"><label>ABN:</label> @Model.ABN </div>
+                }
+
+                <div class="col-xs-12 col-sm-6 col-md-4 email"><label>Email:</label> @Model.Email </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 price"><label>@Model.PriceTypeLabel:</label> @Model.Price</div>
+                <div class="col-xs-12 col-sm-6 col-md-4 seller-type"><label>@Model.SellerTypeLabel</label></div>
+                
+            </div>
+        </div>
+    </div> <!-- end car details -->
+
+    <!-- Enquiry -->
+    <div class="row enquiry-form">
+        <div class="col-xs-12 col-sm-6">
+            <div class="title">For Enquiries</div>
+            <form id="enquiry_form" method="POST" action="@Url.Action("Enquire", "Enquiry", new { Id = Model.Id })">
+                <input type="hidden" name="CarId" value="@Model.Id" />
+                <div>
+                    <label for="EnquirerName">Name : </label>
+                    <input type="text" name="EnquirerName" required id="EnquirerName" />
+                </div>
+                <div>
+                    <label for="EnquirerEmail">Email: </label>
+                    <input type="email" name="EnquirerEmail" required id="EnquirerEmail" />
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-primary" value="Enquire" />
+                    <input type="button" class="btn btn-default" value="Cancel" />
+                </div>
+            </form>
+        </div>
+    </div> <!-- end enquiry-->
+
+    <!-- Comment -->
+    <div class="row comment-form">
+        <div class="col-xs-12 col-sm-6">
+            <div class="title">For Comments</div>
+            <form id="comment_form" method="POST" action="@Url.Action("Comment", "Comment", new { Id = Model.Id })">
+                <input type="hidden" name="CarId" value="@Model.Id" />                
+                <div>
+                    <label for="CommentEmail">Email: </label>
+                    <input type="email" name="CommentEmail" required id="CommentEmail" />
+                </div>
+                <div>
+                    <label for="CommentDescription">Comment: </label>
+                    <input type="text" name="CommentDescription" required id="CommentDescription" />
+                </div>
+                <div>
+                    <input type="submit" class="btn btn-primary" value="Comment" />
+                    <input type="button" class="btn btn-default" value="Cancel" />
+                </div>
+            </form>
+        </div>
+    </div> <!-- end Comment-->
+</div>

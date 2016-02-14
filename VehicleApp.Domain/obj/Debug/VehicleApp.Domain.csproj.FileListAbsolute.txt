@@ -1,0 +1,10 @@
+E:\Australia\JobHunting\mytry\carsales_excercise\carsales_excercise\CarSales.Domain\bin\Debug\CarSales.Domain.dll.config
+E:\Australia\JobHunting\mytry\carsales_excercise\carsales_excercise\CarSales.Domain\bin\Debug\CarSales.Domain.dll
+E:\Australia\JobHunting\mytry\carsales_excercise\carsales_excercise\CarSales.Domain\bin\Debug\CarSales.Domain.pdb
+E:\Australia\JobHunting\mytry\carsales_excercise\carsales_excercise\CarSales.Domain\bin\Debug\EntityFramework.dll
+E:\Australia\JobHunting\mytry\carsales_excercise\carsales_excercise\CarSales.Domain\bin\Debug\EntityFramework.SqlServer.dll
+E:\Australia\JobHunting\mytry\carsales_excercise\carsales_excercise\CarSales.Domain\bin\Debug\EntityFramework.xml
+E:\Australia\JobHunting\mytry\carsales_excercise\carsales_excercise\CarSales.Domain\bin\Debug\EntityFramework.SqlServer.xml
+E:\Australia\JobHunting\mytry\carsales_excercise\carsales_excercise\CarSales.Domain\obj\Debug\VehicleApp.Domain.csprojResolveAssemblyReference.cache
+E:\Australia\JobHunting\mytry\carsales_excercise\carsales_excercise\CarSales.Domain\obj\Debug\CarSales.Domain.dll
+E:\Australia\JobHunting\mytry\carsales_excercise\carsales_excercise\CarSales.Domain\obj\Debug\CarSales.Domain.pdb

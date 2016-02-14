@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "Available Cars";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="nav advert-in-list">
+                @{
+                    foreach (var car in Model)
+                    {
+                        <li>
+                            <a href="@Url.Action("Details","Car", new { Id = car.Id })">
+                                <div class="make-model">
+                                    <span class="make">@car.Make</span>
+                                    <span class="model">@car.Model</span>
+                                    <span class="model">@car.Year</span>
+                                </div>
+                                <div class="price">
+                                    <label>@car.PriceTypeLabel: </label> @car.Price
+                                </div>
+                            </a>
+                        </li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+                        

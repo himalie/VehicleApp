@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleApp.Client.Web", "CarSales.Client.Web\VehicleApp.Client.Web.csproj", "{A37DC0BE-703C-4869-B7FA-4182754523A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleApp.Client.Web", "VehicleApp.Client.Web\VehicleApp.Client.Web.csproj", "{A37DC0BE-703C-4869-B7FA-4182754523A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleApp.Domain", "CarSales.Domain\VehicleApp.Domain.csproj", "{A5593344-502D-487B-8CF8-01A69DDDE46F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleApp.Domain", "VehicleApp.Domain\VehicleApp.Domain.csproj", "{A5593344-502D-487B-8CF8-01A69DDDE46F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
